@@ -1,6 +1,6 @@
 <template>
     <footer class="site-footer">
-      <p>© 2025 Alex. All rights reserved.</p>
+      <p>© 2025 Shuang. All rights reserved.</p>
     </footer>
   </template>
   
