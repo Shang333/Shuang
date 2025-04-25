@@ -10,27 +10,13 @@
       </ul>
 
       <h2>專業訓練</h2>
-      <template>
-        <div v-for="(exp, i) in experiences" :key="`exp-${i}`" class="experience-item">
-            <div class="company-header">
-            <h3>{{ exp.company }}</h3>
-            <span class="date">{{ exp.date }}</span>
-            </div>
-            <p class="job-title">{{ exp.title }}</p>
-            
-            <div v-for="(project, j) in exp.projects" :key="`project-${j}`" class="project-item">
-            <div class="project-header">
-                <h4>{{ project.title }}</h4>
-                <span class="project-date">{{ project.date }}</span>
-            </div>
-            <ul v-if="project.details.length > 0" class="project-details">
-                <li v-for="(detail, k) in project.details" :key="`detail-${k}`">
-                {{ detail }}
-                </li>
-            </ul>
-            </div>
-        </div>
-    </template>
+      <ul class="edu-list">
+        <li v-for="(edu, i) in train" :key="i">
+          <h3>{{ edu.school }} <span>{{ edu.date }}</span></h3>
+          <p>{{ edu.degree }}</p>
+          <p class="desc">{{ edu.description }}</p>
+        </li>
+      </ul>
   
     <h2>工作經驗</h2>
       <ul class="exp-list">
@@ -61,7 +47,7 @@
     {
       school: '國立臺灣科技大學 - 營建工程系',
       degree: '學士畢業',
-      date: '2011/5 ~ 2025/6',
+      date: '2011/5 ~ 2015/6',
       description: "",
     },
   ];
