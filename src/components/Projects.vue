@@ -5,10 +5,10 @@
         <ProjectCard
           v-for="(project, i) in projects"
           :key="i"
-          :image="project.image"
           :title="project.title"
           :description="project.description"
           :techs="project.techs"
+          :github="project.github"
         />
       </div>
     </section>
@@ -19,41 +19,29 @@
   
   const projects = [
     {
-      title: 'Portfolio Website',
-      image: '/images/project1.jpg',
-      description: 'A personal portfolio site built with Vue 3 and SASS.',
-      techs: ['Vue', 'SASS', 'HTML'],
+      title: '個人網站製作',
+      description: '使用Vue 3 (Vite) 製作個人網站(也就是本網站)。',
+      techs: ['Vue 3', 'CSS', 'HTML','Javascript'],
+      github: 'https://github.com/Shang333/Shuang'
     },
     {
-      title: 'Blog API',
-      image: '/images/project2.jpg',
-      description: 'A backend API built with ASP.NET Core for managing blog posts.',
-      techs: ['.NET Core', 'EF Core', 'SQL'],
+      title: 'SOLID原則實作',
+      description: '以SOLID原則建構專案、撰寫程式，功能包含顯示doc、xlxs、pdf對應的文字，與上傳檔案。',
+      techs: ['.NET Core 8', 'EF Core'],
+      github: 'https://github.com/Shang333/SOLID_Practice1'
     },
     {
-      title: 'Portfolio Website',
-      image: '/images/project1.jpg',
-      description: 'A personal portfolio site built with Vue 3 and SASS.',
-      techs: ['Vue', 'SASS', 'HTML'],
+      title: '新聞爬蟲網站',
+      description: '使用Python撰寫爬蟲，針對BBC、CNN的新聞爬取，並匯出成excel檔。',
+      techs: ['.NET Core 8 MVC', 'EF Core', 'MSSQL', 'Python'],
+      github: 'https://github.com/Shang333/FetchNewsProjocet'
     },
     {
-      title: 'Blog API',
-      image: '/images/project2.jpg',
-      description: 'A backend API built with ASP.NET Core for managing blog posts.',
-      techs: ['.NET Core', 'EF Core', 'SQL'],
-    },
-    {
-      title: 'Portfolio Website',
-      image: '/images/project1.jpg',
-      description: 'A personal portfolio site built with Vue 3 and SASS.',
-      techs: ['Vue', 'SASS', 'HTML'],
-    },
-    {
-      title: 'Blog API',
-      image: '/images/project2.jpg',
-      description: 'A backend API built with ASP.NET Core for managing blog posts.',
-      techs: ['.NET Core', 'EF Core', 'SQL'],
-    },
+      title: '專案模組化與單元測試',
+      description: '以模組化的方式分類程式碼，並使用NUNIT撰寫單元測試。',
+      techs: ['.NET Core 8', 'EF Core', 'SQL', 'Unit Test'],
+      github: 'https://github.com/Shang333/APIModuleTest1'
+    }
   ];
   </script>
   

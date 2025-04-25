@@ -1,6 +1,10 @@
 <template>
     <div class="project-card">
-      <h3>{{ title }}</h3>
+      <h3>
+        <a :href="github" target="_blank" rel="noopener noreferrer">
+          {{ title }}
+        </a>
+      </h3>
       <p>{{ description }}</p>
       <div class="tech-list">
         <span v-for="tech in techs" :key="tech">{{ tech }}</span>
@@ -9,7 +13,7 @@
   </template>
   
   <script setup>
-  defineProps(['image', 'title', 'description', 'techs']);
+  defineProps(['title', 'description', 'techs', 'github']);
   </script>
   
   <style scoped lang="scss">
@@ -39,6 +43,14 @@
         font-size: 12px;
       }
     }
+
+    .project-card h3 a {
+      color: #007acc;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+}
   }
   </style>
   
