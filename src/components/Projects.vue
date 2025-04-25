@@ -25,10 +25,22 @@
       github: 'https://github.com/Shang333/Shuang'
     },
     {
+      title: 'Vue 3 和.net core 8 前後端分離實作',
+      description: '前端搭配element plus UI、Vue 3，串接.net core 8 api，完成具有人員、商品分類和訂單的CRUD的系統。',
+      techs: ['Vue 3', 'CSS', 'HTML','Javascript','.NET Core 8', 'EF Core', 'MS SQL'],
+      github: 'https://github.com/Shang333/VueTestProj1'
+    },
+    {
       title: 'SOLID原則實作',
       description: '以SOLID原則建構專案、撰寫程式，功能包含顯示doc、xlxs、pdf對應的文字，與上傳檔案。',
       techs: ['.NET Core 8', 'EF Core'],
       github: 'https://github.com/Shang333/SOLID_Practice1'
+    },
+    {
+      title: '專案模組化與單元測試',
+      description: '以模組化的方式分類程式碼，並使用NUNIT撰寫單元測試。',
+      techs: ['.NET Core 8', 'EF Core', 'SQL', 'Unit Test'],
+      github: 'https://github.com/Shang333/APIModuleTest1'
     },
     {
       title: '新聞爬蟲網站',
@@ -36,12 +48,6 @@
       techs: ['.NET Core 8 MVC', 'EF Core', 'MSSQL', 'Python'],
       github: 'https://github.com/Shang333/FetchNewsProjocet'
     },
-    {
-      title: '專案模組化與單元測試',
-      description: '以模組化的方式分類程式碼，並使用NUNIT撰寫單元測試。',
-      techs: ['.NET Core 8', 'EF Core', 'SQL', 'Unit Test'],
-      github: 'https://github.com/Shang333/APIModuleTest1'
-    }
   ];
   </script>
   
@@ -57,10 +63,12 @@
     }
 
     .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // 最多一行 4 張
-        gap: 2rem;
-        justify-content: center; // 卡片居中
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // 自適應欄位寬度
+      gap: 2rem;
+      justify-content: center;
+      max-width: 1000px; // 你也可以限制整體寬度讓排版更剛好
+      margin: 0 auto;
     }
     }
   </style>
